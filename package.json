@@ -1,8 +1,8 @@
 {
-  "name": "import-existing-s3-bucket",
+  "name": "cdk-app",
   "version": "0.1.0",
   "bin": {
-    "import-existing-s3-bucket": "bin/import-existing-s3-bucket.js"
+    "cdk-app": "bin/cdk-app.ts"
   },
   "scripts": {
     "build": "tsc",
