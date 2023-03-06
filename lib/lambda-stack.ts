@@ -8,7 +8,7 @@ export class LambdaStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const bucket = Bucket.fromBucketName(this, 'ImportedBucket', 'user-bucket');
+    const bucket = Bucket.fromBucketName(this, 'ImportedBucket', 'some-unique-bucket-name');
 
     new Function(this, 'ShowBucketNameFunction', {
         runtime: Runtime.NODEJS_18_X,
