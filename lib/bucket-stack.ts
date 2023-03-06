@@ -6,8 +6,8 @@ export class BucketStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const bucket = new Bucket(this, 'UserBucket', {
-      bucketName: 'user-bucket',
+    const bucket = new Bucket(this, 'SomeUniqueBucketName', {
+      bucketName: 'some-unique-bucket-name',
       removalPolicy: RemovalPolicy.DESTROY,
     });
 
